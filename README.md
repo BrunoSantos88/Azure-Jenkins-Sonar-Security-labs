@@ -1,4 +1,4 @@
-# Setup Iniciar Server Jenkins
+# Setup Inicial Server Jenkins
 
 - Setup resource Group basico.
 
