@@ -19,6 +19,7 @@ runcmd:
  # Criar VM jenkins com 8gb ram
 
 # VM com 2cpu e 8gb ran  ssd 1024gb armazenamento
+
 az vm create \
 --resource-group jenkins-get-started-rg \
 --name jenkins-server-vm \
