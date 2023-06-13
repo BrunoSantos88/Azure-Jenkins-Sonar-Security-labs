@@ -22,7 +22,7 @@ az vm create \
 az vm list -d -o table --query "[?name=='jenkins-server-vm']"
 
 
-# Exposo porta 8080 servidor Jenkins
+# Expose porta 8080 servidor Jenkins
 
 az vm open-port \
 --resource-group jenkins-get-started-rg \
