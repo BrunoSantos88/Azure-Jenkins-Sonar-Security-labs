@@ -2,6 +2,20 @@
 
 - Setup resource Group basico.
 
+# Script 
+
+- criar arquivo cloud-init-jenkins.txt.
+
+#cloud-config
+package_upgrade: true
+runcmd:
+  - sudo apt install openjdk-11-jre -y
+  - curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+  -  echo 'deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/' | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+  - sudo apt-get update && sudo apt-get install jenkins -y
+  - sudo service jenkins restart
+
+
  # Criar VM jenkins com 8gb ram
 
 # VM com 2cpu e 8gb ran  ssd 1024gb armazenamento
