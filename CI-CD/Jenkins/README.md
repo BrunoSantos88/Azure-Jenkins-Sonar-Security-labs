@@ -18,6 +18,10 @@ az vm create \
 --public-ip-sku Standard \
 --custom-data cloud-init-jenkins.txt
 
+# ou 
+
+az vm create --resource-group jenkins-get-started-rg --name jenkins-server-vm --image UbuntuLTS --data-disk-sizes-gb 1024 --size Standard_D2as_v4 --admin-username "azureuser" --generate-ssh-keys --public-ip-sku Standard --custom-data cloud-init-jenkins.txt
+
 
 # Cat VM 
 
