@@ -35,6 +35,11 @@ az vm open-port \
 --name jenkins-server-vm  \
 --port 8080 --priority 1010
 
+# ou
+
+az vm open-port --resource-group jenkins-get-started-rg --name jenkins-server-vm  --port 8080 --priority 1010  </p>
+
+
 # Exposo IP Server
 
 az vm show \
